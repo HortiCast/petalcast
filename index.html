@@ -413,12 +413,11 @@
     form.style.display = 'none';
     msg.style.display  = 'block';
 
-    // Uncomment + replace YOUR_ID to wire up Formspree:
-    // fetch('https://formspree.io/f/YOUR_ID', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   body: JSON.stringify({ email })
-    // });
+  fetch('https://formspree.io/f/xgobvqww', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    });
   }
 
   document.getElementById('emailInput').addEventListener('keydown', e => {
